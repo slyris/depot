@@ -1,0 +1,17 @@
+<div id="product-list">
+  <p class='list-description'>
+    <dl>
+      <dt><b>Title:</b> <%=h @product.title %></dt>
+      <dd><%= @product.description %></dd>
+    </dl>
+  </p>
+
+  <p>
+    <%= image_tag @product.image_url, :class=> 'list-image' %>
+    <b>Image url:</b>
+    <%= @product.image_url %>
+  </p>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', products_path %>
+</div>
