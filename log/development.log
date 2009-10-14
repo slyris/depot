@@ -1209,3 +1209,34 @@ Processing StoreController#index (for 127.0.0.1 at 2009-10-14 11:48:22) [GET]
 Rendering template within layouts/application
 Rendering store/index
 Completed in 71ms (View: 64, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-10-14 13:26:10) [GET]
+  [4;35;1mProduct Load (1.3ms)[0m   [0mSELECT * FROM "products" ORDER BY title[0m
+Rendering template within layouts/application
+Rendering store/index
+Completed in 12ms (View: 5, DB: 1) | 200 OK [http://localhost/store]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-14 13:26:14) [GET]
+
+ActionController::RoutingError (No route matches "/feeds" with {:method=>:get}):
+  /usr/lib/ruby/1.8/mongrel.rb:159:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `each'
+  /usr/lib/ruby/1.8/mongrel.rb:158:in `process_client'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:285:in `run'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `initialize'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `new'
+  /usr/lib/ruby/1.8/mongrel.rb:268:in `run'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-10-14 13:26:18) [GET]
+  [4;36;1mProduct Load (1.0ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 187ms (View: 181, DB: 1) | 200 OK [http://localhost/products]
