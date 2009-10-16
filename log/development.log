@@ -1240,3 +1240,17 @@ Processing ProductsController#index (for 127.0.0.1 at 2009-10-14 13:26:18) [GET]
 Rendering template within layouts/products
 Rendering products/index
 Completed in 187ms (View: 181, DB: 1) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-10-14 16:58:52) [GET]
+  [4;35;1mProduct Load (1.0ms)[0m   [0mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 40ms (View: 33, DB: 1) | 200 OK [http://localhost/products]
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2009-10-15 17:03:24) [GET]
+  [4;36;1mProduct Load (1.1ms)[0m   [0;1mSELECT * FROM "products" [0m
+Rendering template within layouts/products
+Rendering products/index
+Completed in 72ms (View: 63, DB: 1) | 200 OK [http://localhost/products]
